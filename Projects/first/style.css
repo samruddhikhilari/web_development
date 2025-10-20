@@ -1,0 +1,106 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#part1{
+    width:25%;
+    height: 100%;
+    background:linear-gradient(rgb(74, 73, 73),rgb(47, 2, 2));
+    position: relative;
+}
+#part2{
+    width: 60%;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/736x/2a/cc/0c/2acc0cb49dc9cd7d36c3cd77bc026efa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    object-position: center;
+    box-shadow: 15px 15px 15px black;
+    position: relative;
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 52, 52, 0.131);
+}
+#part3{
+    width: 15%;
+    height: 100%;
+    background:linear-gradient(rgb(74, 73, 73),rgb(47, 2, 2));
+    position: relative;
+}
+#text-div{
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-50%,-50%);
+}
+#text-div>h1{
+    color: white;
+    font-weight: bolder;
+    font-size:350px ;
+    text-transform: uppercase;
+    line-height: 280px;
+}
+#img-div{
+    width: 900px;
+    height: 1200px;
+    background-image: url("https://i.pinimg.com/736x/90/85/8c/90858cf9dc0ad5c40be227ceff6f9aae.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    box-shadow: 15px 15px 25px black;
+    position: absolute;
+    top:50%;
+    right: 8%;
+    transform: translate(0%,-50%);
+    border-radius: 15px;
+}
+#nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left:8%;
+    top: 2%;
+    gap: 120px;
+}
+#nav img{
+    border-radius: 120px;
+    height: 200px;
+}
+#nav h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+#top-text{
+    position: absolute;
+    top:30%;
+    right: -22%;
+}
+#top-text > h1{
+    font-size: 320px;
+    font-weight: bold;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 10px;
+    transform: rotate(90deg);
+}

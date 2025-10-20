@@ -1,0 +1,454 @@
+*{
+    margin:0px;
+    padding: 0px;
+    color: whitesmoke;
+    text-transform:uppercase;
+    font-family: "montserrat";
+}
+*::selection{
+    background-color: whitesmoke;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar{
+    background-color: green;
+    width: 5px;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: yellow;
+}
+#nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.21);
+}
+
+#cursor{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: green;
+position: fixed;
+z-index: 99;
+}
+
+#cursor-blur{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+background-color: rgba(125, 176, 16, 0.416);
+position: fixed;
+z-index: 9;
+filter: blur(40px);
+}
+
+#logo{
+    height: 100%;
+    width: 65px;
+}
+
+#logo img{
+    width: 100%;
+    height: 96%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgb(1, 14, 1);
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.517);
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 #arrow{
+    height: 150px;
+    width: 150px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -0%;
+    margin-left: 10px;
+    bottom: 77%;
+    transition: all ease-in 0.5;
+    z-index: 10;
+}
+ #arrow:hover{
+    scale: 0.5;
+    background-color: green;
+    border:none;
+}
+#page #arrow i{
+    font-size: 50%;
+    font-weight: bolder;
+}
+
+#page1 h1{
+ font-size: 100px;
+ font-weight: bold;
+ position: relative;
+}
+
+#page1 h1::before {
+    content: "EAT. DRINK. play";
+    position: absolute;
+    color: white;
+    top:-2px;
+    right:-2px;
+    -webkit-text-stroke: 1.5px rgb(191, 225, 105);
+    z-index: -1;
+}
+
+#page1 h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#page1 h5{
+    font-size: 10px;
+    width: 50%;
+}
+
+#page2{
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 10;
+}
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    transition: all linear 0;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 900;
+    color: black;
+    transition: all linear 0;
+    -webkit-text-stroke: 2px rgb(241, 247, 242);
+    margin-right: 10px;
+}
+#scroller h4:hover{
+    color: rgb(12, 170, 33);
+}
+
+
+@keyframes scroll{
+    from{
+        transform: translate(0);
+    }
+
+    to{
+        transform:translate(-100%) ;
+    }
+}
+
+#about-us{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+#about-us img{
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+#about-us-in{
+    text-align: center;
+}
+
+#about-us-in h1{
+    font-size: 50px;
+font-weight: bolder;
+}
+
+#about-us-in p{
+    line-height: 30px;
+}
+
+#cards-container{
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards{
+    width: 23%;
+    height: 85%;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+}
+.cards:hover{
+.overlay{
+    opacity: 1;
+}
+}
+
+.cards:hover{
+    /* transform: rotate3d(1,2,3,20deg); */
+    transform: rotate(0.5turns);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    opacity: 0;
+    text-align: center;
+    position: relative;
+    transition: all ease-in 0s;
+}
+
+.overlay h3{
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+.overlay p{
+    padding: 5px;
+    padding-top: 10px;
+    font-size: 13px;
+    text-align: center;
+    color: black;
+    line-height: 22px;
+}
+
+#c1{
+    background-image: url(pot1.jpg);
+}
+
+#c2{
+    background-image: url(lights1.jpg);
+}
+#c3{
+    background-image: url(pot1.jpg);
+}
+
+#green-div{
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(to left bottom ,yellow,green,black);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#green-div{
+    transform: rotate(0.5turns);
+}
+
+#green-div h4{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    width: 50%;
+}
+
+#page3{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#page3 > p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    width: 50%; 
+    line-height: 25px;
+}
+
+#page3 #colon1{
+   position: absolute;
+   top:25%;
+   left: 18%;
+  width: 50px;
+  height: 50px;
+}
+#page3 #colon2{
+   position: absolute;
+   top:65%;
+   right: 20%;
+  width: 50px;
+  height: 50px;
+}
+
+#page4{
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.elem{
+    height: 80%;
+    width: 30%;
+    background-color: rebeccapurple;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+    transition: all ease 0.5s;
+}
+
+.elem h2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    transition: all ease 0.5s;
+    background-color: rgb(19, 208, 41);
+    z-index: 10;
+}
+
+.elem:hover h2{
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+.elem:hover img{
+    scale: 1;
+}
+
+#page4 h1{
+    width: 100%;
+    font-size: 90px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    position: absolute;
+    font-family: gilroy;
+    top:-25%;
+    text-align: center;
+}
+
+#footer{
+    width: 100%;
+    height: 40vh;
+    background:linear-gradient(to bottom, yellow,green);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#footer-img{
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    left:-0%;
+}
+
+#footer-logo{
+width: 30%;
+height: 56%;
+border-radius: 20px;
+}
+
+#footer-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.footer-content h2{
+    color:black;
+    font-weight: bold;
+}
+.footer-content h2:hover {
+    color:whitesmoke;
+}
+
+#footer-add{
+    z-index: 10;
+}
+#footer-add h4:hover{
+    color:black;
+}
+
+#footer-add #directions:hover{
+    color: black;
+    font-weight: bold;
+}

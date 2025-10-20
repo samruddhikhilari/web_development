@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest Story Splash</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w-full h-screen relative text-white">
+      <div class="w-full h-screen absolute z-[3]" id="main">
+        <img
+          src="https://i.pinimg.com/736x/c4/91/84/c491843ee652cd971ea4724f7a87a31d.jpg"
+          class="w-full h-screen object-top"
+          alt=""
+        />
+      </div>
+      <div class="w-full h-screen absolute z-[2]" id="incoming">
+        <img
+          src="https://i.pinimg.com/236x/67/5e/8e/675e8ecc65b71a4d6a564d2ca8602daf.jpg"
+          class="w-full h-screen"
+          alt=""
+        />
+      </div>
+      <div class="w-full h-screen z-[4] absolute flex flex-col">
+        <div
+          id="navbar"
+          class="w-full h-[4rem] flex justify-between items-center p-3"
+        >
+          <div class="pimg w-[3rem] h-[3rem] rounded-full overflow-hidden">
+            <img
+              src="https://i.pinimg.com/736x/98/ca/78/98ca7830726fbce1ba9be038e03acfa4.jpg"
+              class="w-full h-full"
+              rounded
+              alt=""
+            />
+          </div>
+          <h1 class="font-bold">They Liked You!</h1>
+          <div
+            class="w-[3rem] h-[3rem] bg-black opacity-75 rounded-full flex items-center justify-center relative"
+          >
+            <i class="ri-chat-3-fill"></i>
+            <div
+              class="w-[1.5rem] h-[1.5rem] bg-red-900 absolute top-0% right-0% translate-x-1/2 -translate-y-4.5 rounded-full flex justify-center items-center"
+            >
+              <h1 id="pmsg">6</h1>
+            </div>
+          </div>
+        </div>
+        <div class="details w-full h-screen p-5 flex flex-col justify-end">
+          <div class="ele divlocation flex justify-start gap-2 items-center">
+            <div
+              class="rounded-full w-[2rem] bg-white flex justify-center items-center"
+            >
+              <h1 class="text-black font-bold text-xl">t</h1>
+            </div>
+            <h1 class="location text-l font-bold">USA Califonia</h1>
+          </div>
+
+          <div class="ele divdetails flex justify-start items-center mb-3">
+            <h1 class="name font-bold text-5xl">Victoria</h1>
+            <h1 class="age font-bold text-5xl opacity-75">" 20</h1>
+          </div>
+
+          <div
+            class="ele divinterest flex justify-start gap-6 items-center mb-3"
+          >
+            <div
+              class="rounded-xl bg-white opacity-75 flex justify-between items-center p-1 gap-1"
+            >
+              <i class="ri-file-music-fill bg-zinc-400 rounded-full"></i>
+              <h1 class="font-bold text-normal text-black capitalize">music</h1>
+            </div>
+          </div>
+
+          <div class="ele divbio mb-3">
+            <h1 class="font-bold">Bio</h1>
+            <h1 class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fuga
+              perspiciatis, porro non temporibus neque optio odit praesentium
+              culpa suscipit!
+            </h1>
+          </div>
+
+          <div class="ele divbtm flex justify-center items-center gap-2 mb-3">
+            <div
+              class="deny bg-white opacity-75 rounded w-1/2 flex justify-center items-center"
+            >
+              <i class="ri-close-fill text-black text-4xl"></i>
+            </div>
+
+            <div
+              class="accept bg-red-900 rounded w-1/2 flex justify-center items-center"
+            >
+              <i class="ri-heart-2-fill text-white text-4xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

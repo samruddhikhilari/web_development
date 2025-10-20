@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    height: 10vh;
+    width:100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 0px 5vmax;
+}
+.right{
+    display: flex;
+    gap: 3vw;
+    padding-right: 2vw;
+    align-items: center;
+}
+.right button{
+    padding:2.5vmin 2.6vmax;
+    background-color: rgb(5, 33, 147);
+    border: 1px solid white;
+    border-radius: 1vw;
+    color: white;
+}
+.right i{
+    font-size: 2vw;
+    display: none;
+}
+@media (max-width:600px){
+.right i{
+    display: block;
+    font-size: 4vmax;
+}
+.right h4{
+    display: none;
+}
+.right button{
+    display: none;
+}
+}
+ 
+.content{
+    width: 100vw;
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left{
+    width: 50%;
+    height: 100%;
+    padding: 5vmax;
+}
+#left h1{
+    font-size: 3.5vmax;
+    text-transform: none;
+}
+#left h1 span{
+    color: rgb(5, 33, 147);
+}
+#left p{
+    font-size:1.6vw ;
+    padding: 1vmax 0vmax;
+}
+#left button{
+    padding:2.5vmin;
+    background-color: rgb(5, 33, 147);
+    border: 1px solid white;
+    border-radius: 1vw;
+    color: white;
+    margin-top: 3vmax;
+}
+#rightsec{
+    width: 50vw;
+    height: 100%;
+    background: url('https://i.pinimg.com/736x/c5/b8/63/c5b863a688bbf51b669fed1180983efa.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width:600px) {
+    .content{
+        flex-direction: column;
+    }
+    #left{
+        width: 100vw;
+        height: 30%;
+        padding:1vmax 3vmax
+    }
+    #left h1{
+        font-size: 3.2vmax;
+    }
+    #left p{
+        font-size: 2.7vw;
+    }
+    #left button{
+        padding:1vmin;
+        margin-top: 0vmax;
+    }
+}

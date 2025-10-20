@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left{
+    width: 55%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 80px;
+}
+#nav>i{
+    font-size: 100px;
+}
+#rnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+#rnav > a{
+    font-size: 70px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#rnav > i{
+    font-size: 80px;
+    color: rgb(6, 6, 107);
+}
+#center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#center-text >h1{
+    font-size: 200px;
+    margin-bottom: 3%;
+}
+#center-text > p{
+    font-size: 50px;
+    opacity: .5;
+    margin-bottom: 3%;
+}
+#center-text > a{
+    text-decoration: none;
+    font-size: 60px;
+    border-bottom: 2px solid black;
+    text-transform: capitalize;
+}
+#right{
+    width: 45%;
+    height: 100%;
+    background-color: red;
+}
+#top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#first{
+    height: 100%;
+    width: 55%;
+    background-image: url("https://i.pinimg.com/736x/cf/8d/7d/cf8d7d7201176d9745912308cdb47da4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#first > h1{
+    font-size: 200px;
+    font-weight: bolde;
+    color: transparent;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-40%,-100%);
+    -webkit-text-fill-color: white;
+    -webkit-text-fill-width: 5px;
+}
+#second{
+    height: 100%;
+    width: 45%;
+    background-image: url("https://i.pinimg.com/736x/9b/7d/ca/9b7dca0ba1025c98f3575ceff6ce4379.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#btm{
+    width: 100%;
+    height: 50%;
+    background-image: url("https://i.pinimg.com/736x/d8/20/95/d82095c25f69803a09d43f20374de7e7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:600px) {
+    #main{
+        flex-direction: column;
+    }
+}

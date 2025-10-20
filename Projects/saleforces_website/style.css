@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color: rgb(24, 24, 106);
+
+}
+#fakeheader{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+}
+
+.logo{
+    height: 100%;
+    width: 5%;
+    margin: 3%;
+}
+
+.logo img{
+    width: 100%;
+    height: 80%;
+    padding: 3px;
+}
+.texts{
+    padding: 10px;
+}
+.texts p:hover{
+    color: rgb(19, 211, 211);
+}
+#more{
+    display: flex;
+    padding: 10px;
+}
+#contactDetails{
+    margin: 2%; 
+    padding: 5px;
+}
+
+#contactDetails p{
+text-align: center;
+text-decoration: underline;
+font-weight:500;
+}
+
+.icon{
+    padding: 10px;
+
+}
+.icon:hover , #login:hover{
+    box-shadow: 5px 5px 15px rgba(15, 3, 119, 0.669);
+    border-radius: 10px;
+}
+#login{
+    padding: 0.5%;
+    display: flex;
+}
+
+#login p , #login i,#contactDetails p{
+    padding: 2px;
+}
+#try{
+    padding: 10px;
+    background-color: rgb(15, 119, 24);
+    border-radius: 5px;
+}
+
+#try p{
+    color: white;
+    font-weight: bold;
+}
+#try:hover{
+    background-color: rgb(7, 84, 13);
+    box-shadow: 5px 5px 15px rgba(6, 172, 53, 0.75);
+}
+
+#page1{
+    width: 100%;
+    height: 85%;
+}
+
+#strip , #heading{
+    width: 100%;
+    height: 13%;
+    background-color: rgb(18, 5, 81);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#strip u{
+    font-weight: bold;
+    color: yellow;
+    margin-left: 1%;
+}
+#content{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1{
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+}
+#box1 h1{
+height: 30%;
+text-align: center;
+align-items: center;
+display: flex;
+padding: 5px;
+justify-content: center;
+color: rgb(2, 2, 91);
+}
+#box1 p{
+    height: 30%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    color: rgb(2, 2, 91);
+}
+
+#subbox{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    justify-content: center;
+}
+#subbox #first{
+    padding: 5px;
+    background-color: rgb(9, 9, 189);
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+}
+#subbox #second{
+    padding: 5px;
+    color: rgb(12, 12, 135);
+    border: 2px solid rgb(8, 8, 150);
+    border-radius: 5px;
+}
+
+#subbox #first:hover, #subbox #second:hover{
+    box-shadow: 10px 10px 15px rgba(7, 27, 106, 0.81);
+}
+#box2{
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section{ 
+    width: 400px;
+    height: 250px;
+    background-color: rgb(17, 4, 57);
+    box-shadow: 10px 10px 15px rgba(7, 27, 106, 0.81);
+    -o-object-fit: contain;
+    object-fit: contain;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section:hover{
+    box-shadow: 0px 0px 0px rgba(7, 27, 106, 0.81);
+}
+#heading{
+    width: 100%;
+    height: 12%;
+    background-color: rgb(9, 9, 157);
+}
+
+#page2{
+    width: 100%;
+    height: 85%;
+    background-color: rgb(243, 245, 243);
+    background-image: url("https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-products-bg.png?resize=2048,625");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+#containsCard{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    width: 220px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(1, 6, 24, 0.81);
+}
+
+.card .cardimg{
+width: 100%;
+height: 45%;
+border-radius: 15px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+background-image: url("https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-1.jpg?resize=768,433");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.card .cardcontent {
+    width: 100%;
+    height:35% ;
+    justify-content: center;
+    align-items: center;    
+}
+.card .cardcontent h4{
+    padding: 10px;
+    color: rgb(14, 5, 85);
+}
+.card .cardcontent h4:hover{
+    color: rgb(156, 156, 228);
+}
+
+.card .cardcontent p{
+    padding: 8px;
+    font-size: 14px;
+}
+
+#img2{
+    background-image: url("https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-2.jpg?resize=768,433");
+}
+#img3{
+    background-image: url("https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-3.jpg?resize=768,433");
+}
+#img4{
+    background-image: url("https://wp.sfdcdigital.com/en-in/wp-content/uploads/sites/21/2023/03/pb-hp-product-smb_icon-4.jpg?resize=768,433");
+}
+
+.cardlink{
+    width: 100%;
+    height:20% ;
+    display: flex;
+    align-items: top;
+}
+
+.cardlink a{
+    margin-left: 10px;
+    font-size:13px ;
+}
+.cardlink a:hover{
+    color: rgb(174, 174, 243);
+    text-decoration: none;
+}
+
+#allproducts{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 2px;
+}
+
+#allproducts p{
+    color: rgb(115, 108, 215);
+    background-color: whitesmoke;
+    padding: 4px 10px;
+    border: 2px solid rgb(144, 139, 234);
+}
+
+#allproducts p:hover{
+    color: rgb(7, 3, 84);
+    background-color: rgb(229, 226, 240);
+    border: 2px solid rgb(7, 3, 84);
+}
