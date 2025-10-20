@@ -1,0 +1,376 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    background-color: rgb(29, 29, 27);
+}
+#page1{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(191, 183, 174);
+}
+#nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 4vw;
+    border-bottom: 2px solid black;
+    /* position: fixed; */
+}
+#nav > h1{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+#nav > img{
+    height: 45px;
+}
+#eles{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 2%;
+}
+.ele{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+.ele > #img-div{
+    width: 100%;
+    height: 60%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.ele #img-div > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.2s;
+}
+.ele:hover img{
+    scale: 1.2;
+}
+.ele h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.ele p{
+    font-size: 30px;
+}
+#ele2{
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+#ele2 > h1 {
+    font-size: 80px;
+    word-spacing: 0px;
+    font-family: 'Times New Roman', Times, serif
+}
+#ele2 > h4 {
+    font-size: 63px;
+    text-align: center;
+    width: 70%;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+#ele2 > h6 {
+    font-size: 35px;
+    font-weight: 200;
+}
+#ele2 h6 > span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#ele3 h1 > span{
+    background-color: rgb(182, 59, 18);
+    padding: 2px;
+    border-radius: 5px;
+    color:rgb(198, 187, 177);
+}
+#page1 > h1{
+    font-size: 700px;
+    text-transform: uppercase;
+    line-height: 570px;
+    margin:0% 1% 0% 2%;
+    background-color: rgb(28, 28, 26);
+    color:rgb(198, 187, 177);
+    letter-spacing: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+#page2{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(198, 190, 181);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+}
+#page2 #left{
+    width: 35%;
+    height: 100%;
+    background:transparent;
+    border-right: 2px solid black;
+    padding: 1% 2%;
+}
+#page2 #left h1{
+    font-size: 150px;
+    text-transform: uppercase;
+    line-height: 150px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 2%;
+}
+#page2 #left h1 > span{
+    font-size: 250px;
+    font-weight:200;
+}
+#page2 #left #img-div{
+    width: 96%;
+    height: 60%;
+    border: 2px solid black;
+    margin-bottom: 4.5%;
+}
+#page2 #left #img-div > img{
+    width: 100%;
+    height: 100%;
+}
+#page2 #left p{
+    font-size: 50px;
+    line-height: 50px;
+    text-align: start;
+    font-weight: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#page2 #left p > span{
+    font-size: 100px;
+    color:rgb(198, 187, 177);
+    background-color: #1C1C1A;
+    margin:5% 3%;
+    padding: 5px;
+}
+
+#page2 #right
+{
+    width: 60%;
+    height: 100%;
+    margin-top: 2%;
+    background:transparent;
+}
+#page2 #right #img-div{
+    width: 100%;
+    height: 60%;
+    border: 2px solid black;
+    margin-bottom: 2%;
+}
+#page2 #right #img-div img{
+    width: 100%;
+    height: 100%;
+}
+.heading{
+    font-size: 132px;
+    line-height: 120px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 2%;
+}
+#page3{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(191, 183, 174);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+#page3 > h1{
+    font-size: 550px;
+    text-transform: uppercase;
+    line-height: 520px;
+    letter-spacing: -10px;
+    background-color: rgb(28, 28, 26);
+    color:rgb(198, 187, 177);
+    letter-spacing: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+#page3 > img {
+    width: 600px;
+    height: 600px;
+}
+#page4{
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(191, 183, 174);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+#page4 #left{
+    width: 70%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#page4 #left #first{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#page4 #left #first #ele2{
+    border: none;
+    border-right: 2px solid black;
+    width: 50%;
+}
+#page4 #left #last{
+    width: 100%;
+    height: 70%;
+}
+#page4 #left #last img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page4 #right{
+    width: 35%;
+    height: 100%;
+    /* background-color: blue; */
+    padding: 1% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+#page4 #right h1{
+    font-size: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8%;
+    line-height: 150px;
+}
+#page4 #right h1 span{
+    font-size: 260px;
+}
+#page4 #right p{
+    font-size: 55px;
+}
+
+#page4 #right p:nth-last-child(1)::after{
+    content: "A";
+    background-color: rgb(29, 29, 27);
+    color: rgb(191, 183, 174);
+    font-size: 150px;
+    /* padding: 2%;
+    margin: 2%; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#magic{
+    width: 80%;
+    border-radius: 50%;
+    height: 250px;
+    border: 2px solid black;
+    margin: 10% 4% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#page4 #right #magic h1{
+    width: 100%;
+    height: 80%; 
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all ease-in .2s;
+    position: absolute;
+    top:25%;
+}
+#page4 #right #magic #before{
+   transform: translateX(-50%);
+   left:50%;
+}
+#page4 #right #magic #after{
+    transform: translateX(-100%);
+}
+#page4 #right #magic:hover #after{
+    transform: translateX(-50%);
+    left:50%;
+}
+#page4 #right #magic:hover #before{
+    transform: translateX(100%);
+}
+#page5{
+    width: 100%;
+    height: 240px;
+    background-color: rgb(191, 183, 174);
+    padding: 2% 4%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#page5::-webkit-scrollbar{
+    display: none;
+}
+#page5 h1{
+    font-size: 100px;
+    text-transform: capitalize;
+    display: inline-block;
+    animation-name: scroll;
+    margin-right: 2%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 1;
+}
+#page5 h1 span{
+    font-size: 130px;
+    background-color: rgb(182, 59, 18);
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 2%));
+    }
+}
+#page6{
+    width: 100%;
+    height: 280px;
+    background-color: rgb(191, 183, 174);
+}
