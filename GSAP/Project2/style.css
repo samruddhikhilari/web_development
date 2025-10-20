@@ -1,0 +1,56 @@
+*{
+    margin:0px;
+    padding: 0px;
+    text-transform: capitalize;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/736x/73/29/73/7329730f2d339aa5c545f51201e63c96.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bolder;
+    z-index: 99;
+}
+h1{
+    color: white;
+}
+nav i{
+    font-size: 30px;
+}
+#menu{
+    width: 35%;
+    height: 90%;
+    border-radius: 20px;
+    position: fixed;
+    top:0%;
+    right: -35%;
+    color: black;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    line-height: 40px;
+    z-index: 1;
+}
+#menu i{
+    position: fixed;
+    right:5%;
+    top:5%;
+    border-radius: 15px;
+    padding: 5px 8px;
+    backdrop-filter: blur(20px);
+    background-color: white;
+}
